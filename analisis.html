@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!--fonts-->
+			<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+		<!--fonts end-->
+		<title> PowerPlay </title>
+		<link rel="icon" href="icono.png" type="image/png" sizes="16x16">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="./css/estilo.css" rel="stylesheet" type="text/css" media="screen" />
+	    <script type="text/javascript" src="./js/datos.json"></script>
+	    <script type="text/javascript" src="./js/config.json"></script>
+	    <script type="text/javascript" src="./js/backend.js"></script>
+	</head>
+	<body  onload="completar()">
+		<!-- Header -->
+		<div class="container">
+			<!-- Imagen -->
+			<div class="row">
+				<center>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-right: 0px; padding-left: 0px;">
+					<img id="banner" src="./img/header.jpg">
+				</div>	
+				</center>
+			</div>
+			<!-- Fin Imagen -->
+			<!-- Menu -->
+			<div class="row">
+				<center>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-right: 0px; padding-left: 0px;">
+					<nav class="navbar navbar-inverse bar">
+					  <div class="container-fluid">
+					    <div class="navbar-header">
+					      <a class="navbar-brand barBoton" href="index.html">PowerPlay</a>
+					    </div>
+					    <ul class="nav navbar-nav">
+					      <li><a class="barBoton resaltar" href="index.html" id="inicio"></a></li>
+					      <li class="active barBoton resaltar"><a href="#" id="analisis"></a></li>
+					      <li><a class="barBoton resaltar" href="populares.html" id="populares"></a></li>
+					      <li class="dropdown">
+					        <a class="dropdown-toggle  barBoton resaltar" data-toggle="dropdown" href="#" id="consolas"
+					        <span class="caret"></span></a>
+					        <ul class="dropdown-menu bar">
+					          <li><a class="sobre" href="#">PS4</a></li>
+					          <li><a class="sobre" href="#">XBOX360</a></li>
+					          <li><a class="sobre" href="#">WII U</a></li>
+					        </ul>
+					      </li>
+					      <li><a class="barBoton resaltar" href="contacto.html" id="contacto"></a></li>
+					    </ul>
+				        <ul class="nav navbar-nav navbar-right">
+				      	  <li><a class="barBoton right resaltar" href="#" data-toggle="modal" data-target="#myModal" id="registrar"></a></li>
+				      	  <li><a class="barBoton right resaltar" href="#" data-toggle="modal" data-target="#myModal2" id="inicioS"></a></li>
+					    </ul>
+					  </div>
+					</nav>
+				</div>	
+				</center>
+			</div>
+			<!-- Fin Menu -->
+		</div>
+		<!-- Fin Header -->
+		<!-- Modal -->
+		<div id="myModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+		    <!-- Modal content-->
+		    <div class="modal-content mod">
+		      <div class="modal-header"  style="border: none; padding-top: 5%; padding-bottom: 1%;">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <center><strong><h4 class="modal-title">Registro</h4></strong></center>
+		      </div>
+		      <div class="modal-body">
+		      	<div class="row">
+		      		<div id="i1" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 izq">
+		      			<input type="text" name="nombre" placeholder="Nombre de Usuario">
+		      		</div>
+		      		<div id="d1" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 der">
+		      			<input type="text" name="fecha" onfocus="(this.type='date')" placeholder="Fecha de Nacimiento">
+		      		</div>
+		      	</div>
+		      	<div class="row">
+		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		      			<input type="email" name="email" placeholder="Correo">
+		      		</div>
+		      	</div>
+		      	<div class="row">
+		      		<div  id="i2" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 izq">
+		      			<input type="password" name="Contrasena" placeholder="Contraseña">
+		      		</div>
+		      		<div  id="d2" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 der">
+		      			<input type="password" name="Contrasena2" placeholder="Confirmar Contraseña">
+		      		</div>
+		      	</div>
+		      </div>
+		      <div class="modal-footer" style="border: none;">
+		      	<div class="row">
+		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		        		<center><button type="button" class="btn modalBoton" data-dismiss="modal">Registrar</button></center>
+		      		</div>
+		      	</div>
+		      </div>
+		    </div>
+
+		  </div>
+		</div>
+
+		<div id="myModal2" class="modal fade" role="dialog">
+		  <div class="modal-dialog modal-sm">
+		    <!-- Modal content-->
+		    <div class="modal-content mod">
+		      <div class="modal-header"  style="border: none; padding-top: 5%; padding-bottom: 1%;">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <center><strong><h4 class="modal-title">Iniciar Sesión</h4></strong></center>
+		      </div>
+		      <div class="modal-body">
+		      	<div class="row">
+		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		      			<input type="email" name="email" placeholder="Correo">
+		      		</div>
+		      	</div>
+		      	<div class="row">
+		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		      			<input type="password" name="Contrasena" placeholder="Contraseña">
+		      		</div>
+		      	</div>
+		      </div>
+		      <div class="modal-footer" style="border: none;">
+		      	<div class="row">
+		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		        		<center><button type="button" class="btn modalBoton" data-dismiss="modal">Iniciar Sesión</button></center>
+		      		</div>
+		      	</div>
+		      </div>
+		    </div>
+
+		  </div>
+		</div>
+		<!-- Fin Modal -->
+		<!-- Body Inicio -->
+		<div class="container  body">
+			<div class="row">
+				<center>
+				<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 topPad">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<center> <h2> Los Analisis Del Momento </h2></center>
+							<br>
+						</div>
+					</div>
+					<!-- Noticias -->
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+							<div class="row">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<div class="grid">
+										<div class="row">
+											<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+												<img id="banner" src="./img/Noticia1.jpg">
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noticias">
+												<h3>Estos son los juegos publicados para Dreamcast en 2017</h3>
+												<p>¿Sabéis que siguen publicándose videojuegos en plataformas retro? Vamos a repasar los juegos que se han publicado en Dreamcast este 2017 que finaliza</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div  class="row">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<div class="grid">
+										<div class="row">
+											<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+												<img id="banner" src="./img/Noticia6.jpg">
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noticias">
+												<h3>10 mejores juegos de PS4 este 2017</h3>
+												<p>¿Que juegos crees que puedas encontrar en la lista? Ingresa y lo descubrirás</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+							<div  class="row">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<div class="grid">	
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<img id="banner" src="./img/Noticia2.jpg">
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 noticias">
+												<b>Localización de todas las fotos del Episodio 1 de Life is Strange para móviles</b>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<div class="grid">
+										<div class="row">
+											<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+												<img id="banner" src="./img/Noticia3.jpg">
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noticias">
+												<h3>Cuphead ya supera los 2 millones de unidades vendidas</h3>
+												<p>Cuphead ya supera los 2 millones de unidades vendidas en todo el mundo. Os hablamos del éxito del título de Microsoft y Studio MDHR para PC y Xbox One. Un excelente juego con increibles graficos y un diseño visual extraordinario</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div  class="row">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<div class="grid" style="padding-bottom: 20px;">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<img id="banner" src="./img/Noticia8.png">
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 noticias">
+												<b>Con OSU podras escuchar tu musica favorita mientras demuestras tus reflejos, ¿qué esperas? juegalo ya!</b>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Fin Noticias -->
+				</div>	
+				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+					<div class="videoBar">
+						<h3 id="videos" style="color: #630000;"><b>¿Todavia no los juegas?</b></h3>
+						<br>
+						<b>Rise Of The Tomb Raider</b>
+						<iframe src="https://www.youtube.com/embed/mRm78Oz6Phs"> </iframe>
+						<br>
+						<br>
+						<b>Halo 5</b>
+						<iframe src="https://www.youtube.com/embed/Rh_NXwqFvHc"> </iframe>
+						<br>
+						<br>
+						<b>Skyrim</b>
+						<iframe src="https://www.youtube.com/embed/JSRtYpNRoN0"> </iframe>
+						<br>
+						<br>
+						<b>Overwatch</b>
+						<iframe src="https://www.youtube.com/embed/oSbhjlJ_Ou4"> </iframe>
+						<br>
+					</div>
+				</div>	
+				</center>
+			</div>
+		</div>
+		<!-- Fin Body -->
+		<!-- Footer Inicio -->
+		<div class="container  body">
+			<div class="row footer">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<center>
+					Copyright 2017&copy; <br>Carlos Julio Iglesias Monsalve<br>Pedro Alejandro Rodriguez Orellana<br>Raquel Jeleitza Escalante Salazar<br>Satoru Diaz Nakada<br>Todos los derechos reservados.
+					</center>
+				</div>	
+			</div>
+		</div>
+		<!-- Fin Footer -->
+	</body>
+</html>

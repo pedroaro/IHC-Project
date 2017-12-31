@@ -1,0 +1,179 @@
+body{
+	background-color: #212121;
+	color: #fff;
+}
+iframe{
+	width: 100%;
+	height: auto;
+	border: none;
+}
+b{
+	font-size: 130%;
+}
+input{
+	margin-top: 10px;
+	color: black;
+	border: none;
+	background-color: rgba(255,255,255,0.9) !important;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+textarea{
+	margin-top: 10px;
+	color: black;
+	border: none;
+	background-color: rgba(255,255,255,0.9) !important;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    black;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    black;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    black;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    black;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    black;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+   color:    black;
+}
+
+
+
+.topPad{
+	padding-top: 2%;
+}
+.body{
+	margin-top: 0px!important;
+	background-color: #000;
+}
+.videoBar{
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-top: 10%;
+	padding: 10%;
+	background-color: #d1d1d1;
+	border-radius: 20px;
+	color: #000;
+}
+.noticias{
+	text-align: justify;
+}
+.bar{
+	margin-bottom: 0px!important;
+	background-color: #630000;
+	border-radius: 0px!important;
+}
+.texto{
+	background-color: rgba(0,0,0,0.7) !important;
+	width: 100%!important;
+	left: 0%!important;
+	text-align: left!important;
+	padding-left: 5%!important;
+	padding-bottom: 5%!important;
+	bottom: 0%!important;
+}
+.barBoton{
+	color: #fff!important;
+}
+.sobre{
+	color: #fff!important;
+}
+.sobre:hover{
+	color: #000!important;
+}
+.noti{
+	border-top: solid 1px;
+	border-color: #630000;
+	padding-top: 2%;
+	margin-top: 2%!important;
+}
+.mod{
+	color: #630000!important;
+	background-color: #d1d1d1!important;
+}
+.resaltar:hover{
+	background-color: #fff!important;
+	color: #000!important;
+}
+.modalBoton{
+	color: white;
+	width: 100%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	text-align: center;
+	background-color: #212121;
+}
+.modalBoton:hover{
+	color: white!important;
+	background-color: #630000;
+}
+.contactoBoton{
+	color: white;
+	width: 100%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	text-align: center;
+	background-color: #630000;
+	margin-bottom: 15%;
+}
+.contactoBoton:hover{
+	background-color: white;
+}
+.tituloContacto{
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
+}
+.izq{
+	padding-right: 5px;
+}
+.der{
+	padding-left: 5px;
+}
+.footer{
+	margin-top: 10px;
+	padding: 1em;
+	background-color: #d1d1d1;
+	color: #333;
+	font-style: italic;
+    border-radius: 5px;
+}
+.grid{
+	background-color: white;
+	padding: 20px;
+	padding-bottom: 10px;
+	color: black;
+	margin-bottom: 20px;
+	border-radius: 20px;
+}
+.grid h3{
+	background-color: white;
+	padding: 20px;
+	padding-bottom: 10px;
+	color: black;
+	margin-bottom: 20px;
+}
+#banner{
+	width: 100%;
+	height: auto;
+}

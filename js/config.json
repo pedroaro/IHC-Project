@@ -1,0 +1,6 @@
+config=[{
+	"Español":{
+		"Inicio":["header.jpg","Inicio","Analisis","Populares","Consolas", "Contacto","Registrar", "Iniciar Sesión", "¿Todavia no los juegas?"]
+	},
+	"Ingles":""
+}]
