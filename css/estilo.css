@@ -35,6 +35,32 @@ textarea{
     border-radius: 5px;
 }
 
+/*----FONTS----*/
+.ff-amaranth{
+	font-family: Amaranth;
+}
+.ff-poppins{
+	font-family: Poppins
+}
+.ff-lato{
+	font-family: Lato;
+}
+
+.fs-small{
+	font-size: 13px;
+}
+.fs-med{
+	font-size: 15px;
+}
+.fs-big{
+	font-size: 17px;
+}
+
+.ft-upper{
+	text-transform: uppercase;
+}
+/*----FIN FONTS----*/
+
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:    black;
@@ -53,7 +79,6 @@ textarea{
 ::-ms-input-placeholder { /* Microsoft Edge */
    color:    black;
 }
-
 ::placeholder { /* Most modern browsers support this now. */
    color:    black;
 }
@@ -74,6 +99,7 @@ textarea{
 	margin-right: 0px;
 	margin-left: 0px;
 	margin-top: 10%;
+	margin-bottom: 10%;
 	padding: 10%;
 	background-color: #d1d1d1;
 	border-radius: 20px;
@@ -82,6 +108,58 @@ textarea{
 .noticias{
 	text-align: justify;
 }
+
+/*----ESTILOS DE PUBLICACIÓN----*/
+.publicacion{
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-top: 1%;
+	margin-bottom: 2%;
+	background-color: #d1d1d1;
+	border-radius: 5px;
+	color: #000;
+}
+
+.pub-title-container{
+	padding:3%;
+}
+
+.pub-img-container{
+	width: 100%;
+}
+
+.pub-inner-img-container{
+	width: 100%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	box-shadow: 2px 2px 8px #888888;
+
+}
+.pub-container{
+	padding: 4%;
+	text-align: justify;
+}
+
+hr{
+	border-color:black;
+	width: 80%;
+}
+
+.pub-comment-container{
+	padding: 4%;
+	text-align: justify;
+}
+
+.footer-hr{
+	padding:0;
+	margin:0;
+	margin-top: 2%;
+	width: 20%;
+	border-color: white;
+}
+
+/*----FIN ESTILOS DE PUBLICACIÓN----*/
+
 .bar{
 	margin-bottom: 0px!important;
 	background-color: #630000;
@@ -156,10 +234,8 @@ textarea{
 .footer{
 	margin-top: 10px;
 	padding: 1em;
-	background-color: #d1d1d1;
-	color: #333;
-	font-style: italic;
-    border-radius: 5px;
+	background-color: #390000;
+	color: #fff;
 }
 .grid{
 	background-color: white;
@@ -178,4 +254,9 @@ textarea{
 #banner{
 	width: 100%;
 	height: auto;
+}
+
+/*---- Para rotación del caret----*/
+.caretup {
+    transform: rotate(180deg);
 }

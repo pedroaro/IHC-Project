@@ -4,21 +4,30 @@
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://use.fontawesome.com/16e25eb0e0.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<!--fonts-->
 			<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
 			<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
-			<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Lato|Amaranth|Poppins" rel="stylesheet">
 			<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
 		<!--fonts end-->
-		<title> PowerPlay </title>
-		<link rel="icon" href="icono.png" type="image/png" sizes="16x16">
+		<title> PowerPlay | El poder de los Videojuegos </title>
+		<link rel="icon" href="./img/icono.png" type="image/png" size="16x16">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="./css/estilo.css" rel="stylesheet" type="text/css" media="screen" />
 	    <script type="text/javascript" src="./js/datos.json"></script>
 	    <script type="text/javascript" src="./js/config.json"></script>
 	    <script type="text/javascript" src="./js/backend.js"></script>
+	    <!--Función para rotar los carets en los dropdowns-->
+	    <script>
+		  $(function(){
+		    $(".dropdown").on("show.bs.dropdown hide.bs.dropdown", function(){
+		      $(this).find(".glyphicon-menu-down").toggleClass("caretup");
+		    });
+		  });
+		</script>
 	</head>
 	<body  onload="completar()">
 		<!-- Header -->
@@ -36,7 +45,7 @@
 			<div class="row">
 				<center>
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-right: 0px; padding-left: 0px;">
-					<nav class="navbar navbar-inverse bar">
+					<nav class="navbar navbar-inverse bar ff-amaranth fs-med">
 					  <div class="container-fluid">
 					    <div class="navbar-header">
 					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -77,7 +86,7 @@
 		</div>
 		<!-- Fin Header -->
 		<!-- Modal -->
-		<div id="myModal" class="modal fade" role="dialog">
+		<div id="myModal" class="modal fade ff-poppins" role="dialog">
 		  <div class="modal-dialog">
 		    <!-- Modal content-->
 		    <div class="modal-content mod">
@@ -120,7 +129,7 @@
 		  </div>
 		</div>
 
-		<div id="myModal2" class="modal fade" role="dialog">
+		<div id="myModal2" class="modal fade ff-poppins" role="dialog">
 		  <div class="modal-dialog modal-sm">
 		    <!-- Modal content-->
 		    <div class="modal-content mod">
@@ -159,7 +168,7 @@
 				<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 topPad">
 					<div class="row">
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-							<center> <h2> Los Analisis Del Momento </h2></center>
+							<center> <h1 class="ff-amaranth"> Los Analisis Del Momento </h1></center>
 							<br>
 						</div>
 					</div>
@@ -176,8 +185,8 @@
 										</div>
 										<div class="row">
 											<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noticias">
-												<h3>Estos son los juegos publicados para Dreamcast en 2017</h3>
-												<p>¿Sabéis que siguen publicándose videojuegos en plataformas retro? Vamos a repasar los juegos que se han publicado en Dreamcast este 2017 que finaliza</p>
+												<h3 class="ff-amaranth">Estos son los juegos publicados para Dreamcast en 2017</h3>
+												<p class="ff-poppins">¿Sabías que siguen publicándose videojuegos en plataformas retro? Vamos a repasar los juegos que se han publicado en Dreamcast este 2017 que finaliza</p>
 											</div>
 										</div>
 									</div>
@@ -193,8 +202,8 @@
 										</div>
 										<div class="row">
 											<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noticias">
-												<h3>10 mejores juegos de PS4 este 2017</h3>
-												<p>¿Que juegos crees que puedas encontrar en la lista? Ingresa y lo descubrirás</p>
+												<h3 class="ff-amaranth">10 mejores juegos de PS4 este 2017</h3>
+												<p class="ff-poppins">¿Qué juegos crees que puedas encontrar en la lista? Ingresa y lo descubrirás</p>
 											</div>
 										</div>
 									</div>
@@ -210,7 +219,7 @@
 												<img id="banner" src="./img/Noticia2.jpg">
 											</div>
 											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 noticias">
-												<b>Localización de todas las fotos del Episodio 1 de Life is Strange para móviles</b>
+												<b class="ff-amaranth">Localización de todas las fotos del Episodio 1 de Life is Strange para móviles</b>
 											</div>
 										</div>
 									</div>
@@ -226,8 +235,8 @@
 										</div>
 										<div class="row">
 											<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noticias">
-												<h3>Cuphead ya supera los 2 millones de unidades vendidas</h3>
-												<p>Cuphead ya supera los 2 millones de unidades vendidas en todo el mundo. Os hablamos del éxito del título de Microsoft y Studio MDHR para PC y Xbox One. Un excelente juego con increibles graficos y un diseño visual extraordinario</p>
+												<h3 class="ff-amaranth">Cuphead ya supera los 2 millones de unidades vendidas</h3>
+												<p class="ff-poppins">Cuphead ya supera los 2 millones de unidades vendidas en todo el mundo. Les hablamos del éxito del título de Microsoft y Studio MDHR para PC y Xbox One. Un excelente juego con increibles graficos y un diseño visual extraordinario</p>
 											</div>
 										</div>
 									</div>
@@ -241,7 +250,7 @@
 												<img id="banner" src="./img/Noticia8.png">
 											</div>
 											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 noticias">
-												<b>Con OSU podras escuchar tu musica favorita mientras demuestras tus reflejos, ¿qué esperas? juegalo ya!</b>
+												<b class="ff-amaranth">Con OSU podras escuchar tu musica favorita mientras demuestras tus reflejos, ¿qué esperas? juegalo ya!</b>
 											</div>
 										</div>
 									</div>
@@ -253,21 +262,21 @@
 				</div>	
 				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
 					<div class="videoBar">
-						<h3 id="videos" style="color: #630000;"><b>¿Todavia no los juegas?</b></h3>
+						<h2 id="videos" style="color: #630000;" class="ff-amaranth">¿Todavia no los juegas?</h2>
 						<br>
-						<b>Rise Of The Tomb Raider</b>
+						<b class="ff-poppins">Rise Of The Tomb Raider</b>
 						<iframe src="https://www.youtube.com/embed/mRm78Oz6Phs"> </iframe>
 						<br>
 						<br>
-						<b>Halo 5</b>
+						<b class="ff-poppins">Halo 5</b>
 						<iframe src="https://www.youtube.com/embed/Rh_NXwqFvHc"> </iframe>
 						<br>
 						<br>
-						<b>Skyrim</b>
+						<b class="ff-poppins">Skyrim</b>
 						<iframe src="https://www.youtube.com/embed/JSRtYpNRoN0"> </iframe>
 						<br>
 						<br>
-						<b>Overwatch</b>
+						<b class="ff-poppins">Overwatch</b>
 						<iframe src="https://www.youtube.com/embed/oSbhjlJ_Ou4"> </iframe>
 						<br>
 					</div>
@@ -279,11 +288,15 @@
 		<!-- Footer Inicio -->
 		<div class="container  body">
 			<div class="row footer">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<center>
-					Copyright 2017&copy; <br>Carlos Julio Iglesias Monsalve<br>Pedro Alejandro Rodriguez Orellana<br>Raquel Jeleitza Escalante Salazar<br>Satoru Diaz Nakada<br>Todos los derechos reservados.
-					</center>
-				</div>	
+				<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 ff-lato">
+					Powerplay &copy; 2017<br>Carlos Julio Iglesias Monsalve<br>Pedro Alejandro Rodriguez Orellana<br>Raquel Jeleitza Escalante Salazar<br>Satoru Diaz Nakada<br>Todos los derechos reservados.
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+					<i class="fa fa-facebook-square fa-2x pull-right" aria-hidden="true"></i>
+					<i class="fa fa-twitter-square fa-2x pull-right" aria-hidden="true"></i>
+					<i class="fa fa-instagram fa-2x pull-right" aria-hidden="true"></i>
+					<i class="fa fa-youtube-play fa-2x pull-right" aria-hidden="true"></i>
+				</div>
 			</div>
 		</div>
 		<!-- Fin Footer -->
