@@ -133,29 +133,55 @@ textarea{
 	margin-top: 2%;
 	margin-bottom: 2%;
 	box-shadow: 2px 2px 8px #888888;
-
 }
+
 .pub-container{
 	padding: 4%;
+	padding-bottom: 0;
 	text-align: justify;
+}
+
+.tag-container, .author-container{
+	padding: 4%;
+	padding-left: 6%;
+	text-align: justify;
+}
+
+.author-container img{
+	border: solid 2px;
+	border-color: #4A0000;
+	border-radius: 5px;
 }
 
 hr{
-	border-color:black;
+	border-color:#5E5E5E;
 	width: 80%;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .pub-comment-container{
-	padding: 4%;
+	margin: 5%;
+	padding: 6%;
+	padding-top: 0px;
 	text-align: justify;
+	background-color: #F5F5F5;
+	border-radius: 5px;
 }
 
-.footer-hr{
-	padding:0;
-	margin:0;
-	margin-top: 2%;
-	width: 20%;
-	border-color: white;
+.pub-comment-container img{
+	border: solid black 2px;
+	border-radius: 5px;
+}
+.comment-container{
+	margin: 4px;
+}
+
+.comment-container hr{
+	border-color:#5E5E5E;
+	width: 80%;
+	margin-top: 4%;
+	margin-bottom: 4%;
 }
 
 /*----FIN ESTILOS DE PUBLICACIÓN----*/
@@ -221,6 +247,9 @@ hr{
 .contactoBoton:hover{
 	background-color: white;
 }
+.center-block{
+	float: none;
+}
 .tituloContacto{
 	margin-top: 2.5%;
 	margin-bottom: 2.5%;
@@ -259,4 +288,13 @@ hr{
 /*---- Para rotación del caret----*/
 .caretup {
     transform: rotate(180deg);
+}
+
+/*----Footer miscelaneo----*/
+.footer-hr{
+	padding:0;
+	margin:0;
+	margin-top: 2%;
+	width: 20%;
+	border-color: white;
 }
