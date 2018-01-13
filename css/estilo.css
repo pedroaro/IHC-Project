@@ -1,3 +1,4 @@
+/*----Elementos base----*/
 body{
 	background-color: #212121;
 	color: #fff;
@@ -35,6 +36,18 @@ textarea{
     border-radius: 5px;
 }
 
+a{
+	color: #7F0B0D;
+}
+
+a:hover{
+	color: #AD0E1D;
+	text-decoration: none;
+	display: inline-block;
+}
+
+/*----FIN Elementos base----*/
+
 /*----FONTS----*/
 .ff-amaranth{
 	font-family: Amaranth;
@@ -61,7 +74,7 @@ textarea{
 }
 /*----FIN FONTS----*/
 
-
+/*----PLACEHOLDERS----*/
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:    black;
 }
@@ -82,9 +95,9 @@ textarea{
 ::placeholder { /* Most modern browsers support this now. */
    color:    black;
 }
+/*----FIN PLACEHOLDERS----*/
 
-
-
+/*----BODY----*/
 .topPad{
 	padding-top: 2%;
 }
@@ -108,6 +121,7 @@ textarea{
 .noticias{
 	text-align: justify;
 }
+/*----FIN BODY----*/
 
 /*----ESTILOS DE PUBLICACIÓN----*/
 .publicacion{
@@ -145,6 +159,7 @@ textarea{
 	padding: 4%;
 	padding-left: 6%;
 	text-align: justify;
+	cursor: default;
 }
 
 .author-container img{
@@ -175,6 +190,7 @@ hr{
 }
 .comment-container{
 	margin: 4px;
+	cursor: default;
 }
 
 .comment-container hr{
@@ -183,7 +199,6 @@ hr{
 	margin-top: 4%;
 	margin-bottom: 4%;
 }
-
 /*----FIN ESTILOS DE PUBLICACIÓN----*/
 
 .bar{
