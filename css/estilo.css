@@ -199,6 +199,15 @@ hr{
 	margin-top: 4%;
 	margin-bottom: 4%;
 }
+
+/*----Estrellas de Rating----*/
+.rating-share{
+	padding:2%;
+}
+.rating{
+	padding:2px;
+}
+
 /*----FIN ESTILOS DE PUBLICACIÓN----*/
 
 .bar{
