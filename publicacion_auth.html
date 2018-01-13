@@ -20,6 +20,7 @@
 	    <script type="text/javascript" src="./js/datos.json"></script>
 	    <script type="text/javascript" src="./js/config.json"></script>
 	    <script type="text/javascript" src="./js/backend.js"></script>
+	    <script src="./js/bootstrap-rating-input.min.js" type="text/javascript"></script>
 	    <!--Función para rotar los carets en los dropdowns-->
 	    <script>
 		  $(function(){
@@ -219,6 +220,7 @@
 										Califica esta entrada: <input type="number" name="pub-rating" id="pub-rating" class="rating"/>
 									</div>									
 								</div>
+							</div>
 						</div>
 						<hr>
 						<div class="author-container">
@@ -227,7 +229,7 @@
 									<img class="img-responsive" src="img/Profilepics/raineb.jpg">
 								</div>
 								<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-									<a href="#"><h2 class="ff-amaranth ft-upper">RaineB</h2></a>
+									<h2 class="ff-amaranth ft-upper"><a href="#">RaineB</a></h2>
 									<p class="ff-poppins">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
@@ -237,13 +239,13 @@
 						<hr>
 						<div class="pub-comment-container">
 							<div class="row">
-								<h1 class="ff-amaranth ft-upper">Comentarios</h1>
+								<h1 class="ff-amaranth ft-upper" style="padding-bottom: 2%">Comentarios</h1>
 									<div class="comment-container">
 										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
 											<img class="img-responsive" src="img/icono.png">
 										</div>
 										<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-											<a href="#"><h3 class="ff-amaranth">User 1</h3></a>
+											<h3 class="ff-amaranth"><a href="#">User 1</a></h3>
 											<p class="ff-poppins">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
@@ -255,7 +257,7 @@
 											<img class="img-responsive" src="img/icono.png">
 										</div>
 										<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-											<a href="#"><h3 class="ff-amaranth">User 2</h3></a>
+											<h3 class="ff-amaranth"><a href="#">User 2</a></h3>
 											<p class="ff-poppins">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
@@ -267,7 +269,7 @@
 											<img class="img-responsive" src="img/icono.png">
 										</div>
 										<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-											<a href="#"><h3 class="ff-amaranth">User 3</h3></a>
+											<h3 class="ff-amaranth"><a href="#">User 3</a></h3>
 											<p class="ff-poppins">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
@@ -276,9 +278,15 @@
 									</div> 
 							</div>						
 						</div>
-						<div class="comment-publish">
-							
-						</div>
+						<form>
+							<div class="comment-form row">
+								<div class="col-lg-8 col-md-8 col-sm-10 col-xs-10 center-block">
+									<label for="comment" class="ff-amaranth fs-med">Escribe tu comentario:</label>
+		 							<textarea class="form-control" rows="5" id="comment"></textarea>
+		 							<button type="button" class="btn contactoBoton ff-poppins center-block">Enviar Comentario</button>
+	 							</div>
+							</div>
+						</form>
 					</div>					
 				</div>
 				<!-- Fin publicación -->
