@@ -77,24 +77,24 @@ a:hover{
 
 /*----PLACEHOLDERS----*/
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:    black;
+    color:    #9C9990;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color:    black;
+   color:    #9C9990;
    opacity:  1;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color:    black;
+   color:    #9C9990;
    opacity:  1;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color:    black;
+   color:    #9C9990;
 }
 ::-ms-input-placeholder { /* Microsoft Edge */
-   color:    black;
+   color:    #9C9990;
 }
 ::placeholder { /* Most modern browsers support this now. */
-   color:    black;
+   color:    #9C9990;
 }
 /*----FIN PLACEHOLDERS----*/
 
@@ -213,6 +213,7 @@ hr{
 /*----ESTILOS DE ADMINISTRACIÓN----*/
 .admin-container{
 	margin: 10%;
+	margin-top: 0;
 	padding: 6%;
 	text-align: justify;
 	background-color: #F5F5F5;
@@ -246,11 +247,37 @@ hr{
 /*----ESTILOS DE CREACION DE ENTRADA----*/
 .crear-pub-container{
 	margin: 10%;
+	margin-top: 0;
 	padding: 6%;
 	text-align: justify;
 	background-color: #F5F5F5;
 	border-radius: 5px;
 	color: black;
+}
+
+/*----Subir imagen----*/
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+#img-upload{
+    width: 100%;
 }
 /*----FIN ESTILOS DE CREACION DE ENTRADA----*/
 
