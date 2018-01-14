@@ -316,6 +316,23 @@ hr{
 	height: auto;
 }
 
+/*---- fixed menu ----*/
+.modal{
+	z-index: 9999 !important;
+}
+
+.affix {
+      top: 0;
+      left: 0;
+      margin-left: 0px;
+      width: 100%;
+      z-index: 500 !important;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
+
 /*---- opcion perfil ----*/
 .inset {
   z-index: 999;
@@ -365,6 +382,8 @@ hr{
 .caretup {
     transform: rotate(180deg);
 }
+
+
 
 /*----Footer miscelaneo----*/
 .footer-hr{
