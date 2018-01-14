@@ -2,6 +2,7 @@
 body{
 	background-color: #212121;
 	color: #fff;
+	padding: inherit!important;
 }
 iframe{
 	width: 100%;
@@ -297,6 +298,18 @@ hr{
 	padding-bottom: 3%;
 	text-align: center;
 	background-color: #212121;
+}
+.modalBoton:focus{
+	color: white;
+	width: 100%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	text-align: center;
+	background-color: #212121;
+}
+.modalBoton:focus:hover{
+	color: white!important;
+	background-color: #630000;
 }
 .modalBoton:hover{
 	color: white!important;
