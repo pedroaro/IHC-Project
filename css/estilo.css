@@ -270,6 +270,13 @@ hr{
 }
 .contactoBoton:hover{
 	background-color: white;
+	color: black;
+}
+.contactoBoton:focus{
+	color: white;
+}
+.contactoBoton:focus:hover{
+	color: black;
 }
 .center-block{
 	float: none;
@@ -308,6 +315,51 @@ hr{
 	width: 100%;
 	height: auto;
 }
+
+/*---- opcion perfil ----*/
+.inset {
+  z-index: 999;
+}
+.userImage2 {
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+}
+.userImage3 {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.userImage {
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+  position: relative;
+  z-index: 998;
+}
+.navbar-login
+{
+    width: 305px;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.navbar-login-session
+{
+    padding: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+.perfilMenu{
+	background-color: white;
+	color: black;
+}
+.contrasenaBoton{
+	width: 100%;
+	padding-top: 3%;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 30%;}
 
 /*---- Para rotación del caret----*/
 .caretup {
