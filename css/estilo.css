@@ -209,6 +209,49 @@ hr{
 }
 
 /*----FIN ESTILOS DE PUBLICACIÓN----*/
+/*----ESTILOS DE ADMINISTRACIÓN----*/
+.admin-container{
+	margin: 10%;
+	padding: 6%;
+	text-align: justify;
+	background-color: #F5F5F5;
+	border-radius: 5px;
+	color: black;
+}
+
+.admin-btn{
+	color: white;
+	width: 100%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	text-align: center;
+	background-color: #630000;
+	margin-bottom: 1%;
+}
+
+.admin-btn:hover{
+	background-color: #BFBEBA;
+}
+
+.admin-btn:focus{
+	color: white;
+}
+
+.admin-btn:focus:hover{
+	color: black;
+}
+/*----FIN ESTILOS DE ADMINISTRACIÓN----*/
+
+/*----ESTILOS DE CREACION DE ENTRADA----*/
+.crear-pub-container{
+	margin: 10%;
+	padding: 6%;
+	text-align: justify;
+	background-color: #F5F5F5;
+	border-radius: 5px;
+	color: black;
+}
+/*----FIN ESTILOS DE CREACION DE ENTRADA----*/
 
 .bar{
 	margin-bottom: 0px!important;

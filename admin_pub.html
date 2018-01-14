@@ -21,7 +21,6 @@
 	    <script type="text/javascript" src="./js/datos.json"></script>
 	    <script type="text/javascript" src="./js/config.json"></script>
 	    <script type="text/javascript" src="./js/backend.js"></script>
-	    <script src="./js/bootstrap-rating-input.min.js" type="text/javascript"></script>
 	    <!--Función para rotar los carets en los dropdowns-->
 		<script>
 		  $(function(){
@@ -196,160 +195,81 @@
 		  </div>
 		</div>
 		<!-- Fin Modal -->
-<!-- Body Inicio -->
-		<div class="container  body">
+		<!-- Body Inicio -->
+		<div class="container body">
 			<div class="row">
-				<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 topPad">
-					<div class="publicacion">
-						<center>
-							<div class="pub-title-container">
-								<h1 class="ff-amaranth ft-upper">Cuphead ya supera los 2 millones de unidades vendidas</h1>
-								<h4 class="ff-poppins fs-small">Publicado el 02/01/18 | Autor: <a href="#">RaineB</a> | Categoría: <a href="analisis.html">Análisis</a>, <a href="xbox.html">XBOX</a></h4>
-							</div>
-						</center>
-						<img src="http://onlysp.com/wp-content/uploads/2017/10/Cuphead.jpg" class="pub-img-container">
-						<div class="pub-container ff-poppins">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							<img src="https://assets.pcmag.com/media/images/470358-cuphead-for-pc.jpg?width=1350&height=759" class="pub-inner-img-container">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							<div class="tag-container">
-								<h2 class="ff-amaranth ft-upper">Etiquetas:</h2>
-								<h5 class="ff-poppins"><a href="#">Cuphead</a>, <a href="#">PC</a>, <a href="#">Estilo Retro</a>, <a href="#">Mouse</a></h5>
-								<div class="row rating-share ff-poppins">
-									<div class="col-lg-7 col-md-7 col-sm-8 col-xs-8">
-										Comparte en Redes Sociales:
+				<center>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 tituloContacto ff-amaranth">
+					<h2>Administrar Publicaciones</h2>
+				</div>
+				</center>
+				<div class="row">
+					<div class="admin-container">
+							<button type="button" class="btn admin-btn ff-poppins center-block">Crear Publicación</button>							
+							<div class="row">
+								<h1 class="ff-amaranth ft-upper">Entradas</h1>
+								<div class="comment-container">
+									<div class="col-lg-8 col-md-8 col-sm-10 col-xs-10">
+										<h3 class="ff-amaranth"><a href="#">Titulo 1</a></h3>
+										<p class="ff-poppins">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+									</div>
+									<div class="col-lg-2 ff-poppins">
 										<br>
-										<a href="http://www.facebook.com"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
-										<a href="http://www.twitter.com"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
-										<a href="http://reddit.com"><i class="fa fa-reddit-square fa-2x" aria-hidden="true"></i></a>
+										<br>
+										<button type="button" class="btn admin-btn ff-poppins center-block">Modificar</button>	
 									</div>
-									<div class="col-lg-4 col-md-4 col-sm-8 col-xs-8">
-										Califica esta entrada: <input type="number" name="pub-rating" id="pub-rating" class="rating"/>
-									</div>									
-								</div>
-							</div>
-						</div>
-						<hr>
-						<div class="author-container">
-							<div class="row">
-								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-									<img class="img-responsive" src="img/Profilepics/raineb.jpg">
-								</div>
-								<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-									<h2 class="ff-amaranth ft-upper"><a href="#">RaineB</a></h2>
-									<p class="ff-poppins">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-								</div>
-							</div>
-						</div>
-						<hr>
-						<div class="pub-comment-container">
-							<div class="row">
-								<h1 class="ff-amaranth ft-upper" style="padding-bottom: 2%">Comentarios</h1>
-									<div class="comment-container">
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-											<img class="img-responsive" src="img/icono.png">
-										</div>
-										<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-											<h3 class="ff-amaranth"><a href="#">User 1</a></h3>
-											<p class="ff-poppins">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-											<hr>
-										</div>
+									<div class="col-lg-2 ff-poppins">
+										<br>
+										<br>
+										<button type="button" class="btn admin-btn ff-poppins center-block">Eliminar</button>	
 									</div>
-									<div class="comment-container">
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-											<img class="img-responsive" src="img/icono.png">
-										</div>
-										<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-											<h3 class="ff-amaranth"><a href="#">User 2</a></h3>
-											<p class="ff-poppins">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-											<hr>
-										</div>
-									</div> 
-									<div class="comment-container">
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-											<img class="img-responsive" src="img/icono.png">
-										</div>
-										<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-											<h3 class="ff-amaranth"><a href="#">User 3</a></h3>
-											<p class="ff-poppins">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-											<hr>
-										</div>
-									</div> 
+								</div>
+								<hr>
+								<div class="comment-container">
+									<div class="col-lg-8 col-md-8 col-sm-10 col-xs-10">
+										<h3 class="ff-amaranth"><a href="#">Titulo 2</a></h3>
+										<p class="ff-poppins">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+									</div>
+									<div class="col-lg-2 ff-poppins">
+										<br>
+										<br>
+										<button type="button" class="btn admin-btn ff-poppins center-block">Modificar</button>	
+									</div>
+									<div class="col-lg-2 ff-poppins">
+										<br>
+										<br>
+										<button type="button" class="btn admin-btn ff-poppins center-block">Eliminar</button>	
+									</div>
+								</div>
+								<hr> 
+								<div class="comment-container">
+									<div class="col-lg-8 col-md-8 col-sm-10 col-xs-10">
+										<h3 class="ff-amaranth"><a href="#">Titulo 3</a></h3>
+										<p class="ff-poppins">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+									</div>
+									<div class="col-lg-2 ff-poppins">
+										<br>
+										<br>
+										<button type="button" class="btn admin-btn ff-poppins center-block">Modificar</button>	
+									</div>
+									<div class="col-lg-2 ff-poppins">
+										<br>
+										<br>
+										<button type="button" class="btn admin-btn ff-poppins center-block">Eliminar</button>	
+									</div>
+								</div> 
 							</div>						
 						</div>
-						<form>
-							<div class="comment-form row">
-								<div class="col-lg-8 col-md-8 col-sm-10 col-xs-10 center-block">
-									<label for="comment" class="ff-amaranth fs-med">Escribe tu comentario:</label>
-		 							<textarea class="form-control" rows="5" id="comment"></textarea>
-		 							<button type="button" class="btn contactoBoton ff-poppins center-block">Enviar Comentario</button>
-	 							</div>
-							</div>
-						</form>
 					</div>					
 				</div>
-				<!-- Fin publicación -->
-				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-					<center>
-						<div class="videoBar">
-							<h2 id="videos" style="color: #630000;" class="ff-amaranth">¿Todavía no los juegas?</h2>
-							<br>
-							<b class="ff-poppins">Rise Of The Tomb Raider</b>
-							<iframe src="https://www.youtube.com/embed/mRm78Oz6Phs"> </iframe>
-							<br>
-							<br>
-							<b class="ff-poppins">Halo 5</b>
-							<iframe src="https://www.youtube.com/embed/Rh_NXwqFvHc"> </iframe>
-							<br>
-							<br>
-							<b class="ff-poppins">Skyrim</b>
-							<iframe src="https://www.youtube.com/embed/JSRtYpNRoN0"> </iframe>
-							<br>
-							<br>
-							<b class="ff-poppins">Overwatch</b>
-							<iframe src="https://www.youtube.com/embed/oSbhjlJ_Ou4"> </iframe>
-							<br>
-						</div>
-					</center>
-				</div>	
 			</div>
-		</div>
+		</div>	
 		<!-- Fin Body -->
 		
 		<!-- Footer Inicio -->
