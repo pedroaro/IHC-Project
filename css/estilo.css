@@ -172,8 +172,8 @@ a:hover{
 hr{
 	border-color:#5E5E5E;
 	width: 80%;
-	margin-top: 0;
-	margin-bottom: 0;
+	margin-top: 3px;
+	margin-bottom: 3px;
 }
 
 .pub-comment-container{
@@ -185,10 +185,6 @@ hr{
 	border-radius: 5px;
 }
 
-.pub-comment-container img{
-	border: solid black 2px;
-	border-radius: 5px;
-}
 .comment-container{
 	margin: 4px;
 	cursor: default;
@@ -240,6 +236,22 @@ hr{
 }
 
 .admin-btn:focus:hover{
+	color: black;
+}
+
+.single-comment{
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+.comment-admin-container{
+	margin: 10%;
+	margin-top: 0;
+	padding: 6%;
+	padding-top: 2%;
+	text-align: justify;
+	background-color: #F5F5F5;
+	border-radius: 5px;
 	color: black;
 }
 /*----FIN ESTILOS DE ADMINISTRACIÓN----*/
@@ -411,12 +423,12 @@ hr{
       left: 0;
       margin-left: 0px;
       width: 100%;
-      z-index: 500 !important;
-  }
+      z-index: 1000!important;
+}
 
-  .affix + .container-fluid {
+.affix + .container-fluid {
       padding-top: 70px;
-  }
+}
 
 /*---- opcion perfil ----*/
 .inset {

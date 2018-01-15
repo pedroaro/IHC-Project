@@ -18,8 +18,6 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="./css/estilo.css" rel="stylesheet" type="text/css" media="screen" />
-		<link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script>
 	    <!--Función para rotar los carets en los dropdowns-->
 		<script>
 		  $(function(){
@@ -41,11 +39,11 @@
 				</center>
 			</div>
 			<!-- Fin Imagen -->
-			<!-- Menu -->
+						<!-- Menu -->
 			<div class="row">
 				<center>
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-right: 0px; padding-left: 0px;">
-					<nav class="navbar navbar-inverse bar ff-poppins"  data-spy="affix" data-offset-top="197">
+					<nav class="navbar navbar-inverse bar ff-poppins" data-spy="affix" data-offset-top="197">
 					  <div class="container-fluid">
 					    <div class="navbar-header">
 					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -58,21 +56,21 @@
 					    </div>
 					    <div id="navbar" class="navbar-collapse collapse">
 						    <ul class="nav navbar-nav">
-						      <li><a class="barBoton resaltar" href="index_auth.html" id="inicio">Inicio</a></li>
+						      <li><a class="barBoton resaltar" href="#" id="inicio">Inicio</a></li>
 						      <li><a class="barBoton resaltar" href="analisis_auth.html" id="analisis">Análisis</a></li>
 						      <li><a class="barBoton resaltar" href="populares_auth.html" id="populares">Populares</a></li>
 						      <li class="dropdown">
-						        <a class="dropdown-toggle  barBoton resaltar" data-toggle="dropdown" href="#" id="consolas">Consolas</a>
+						        <a class="dropdown-toggle  barBoton resaltar" data-toggle="dropdown" href="#" id="consolas">Consolas &nbsp;<span class="glyphicon glyphicon-menu-down"></span></a>
 						        <ul class="dropdown-menu bar">
 						          <li><a class="sobre" href="ps4_auth.html">PS4</a></li>
 						          <li><a class="sobre" href="xbox_auth.html">XBOX ONE</a></li>
 						          <li><a class="sobre" href="switch_auth.html">NINTENDO SWITCH</a></li>
 						        </ul>
 						      </li>
-						      <li><a class="barBoton resaltar" href="contacto_auth.html" id="contacto">Contacto &nbsp;<span class="glyphicon glyphicon-menu-down"></span></a></li>
+						      <li><a class="barBoton resaltar" href="contacto_auth.html" id="contacto">Contacto</a></li>
 						    </ul>
 					        <ul class="nav navbar-nav navbar-right">
-					      	  <li class="dropdown inset">
+					      	  <li class="dropdown inset active barBoton resaltar">
 						        <a class="dropdown-toggle  barBoton resaltar" data-toggle="dropdown" href="#" id="NombreUsario"><img src="img/Profilepics/raineb.jpg" class="userImage" alt="Avatar"> &nbsp; RAINEB &nbsp; <span class="	glyphicon glyphicon-menu-down"></span></a>
 						        <ul class="dropdown-menu bar perfilMenu">
 						        	<li>
@@ -199,34 +197,112 @@
 			<div class="row">
 				<center>
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 tituloContacto ff-amaranth">
-					<h2>Crear Publicación</h2>
+					<h2>Administrar Comentarios</h2>
 				</div>
 				</center>
 			</div>
 			<div class="row">
-				<div class="crear-pub-container">							
-					<div class="row">
-						<label for="pub_title" class="ff-amaranth fs-big">Título de la publicación:</label>
-						<input type="text" name="pub_title" id="pub_title" class="ff-poppins" placeholder="Escribe el título aquí"/>
+				<div class="comment-admin-container">							
+						<div class="row">
+							<h2 class="ff-amaranth">Seleccione los comentarios que desee administrar:</h2>
+							<div class="comment-container">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<h2 class="ff-amaranth"><a href="#">Cuphead ya supera los 2 millones de unidades vendidas</a></h2>
+									<h6 class="ff-poppins">Fecha de publicación: dd/mm/aaaa</h6>
+									<h3 class="ff-amaranth"><a href="#">Comentarios:</a></h3>
+									<div class="row single-comment">
+										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+											<img class="img-responsive" src="img/icono.png">
+										</div>
+										<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+										<h3 class="ff-amaranth"><a href="#">User 1</a></h3>
+											<p class="ff-poppins">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+										</div>
+										<br>
+										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+											<input type="checkbox" name="user1" value="User 1">
+										</div>
+									</div>
+									<br>
+									<div class="row single-comment">
+										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+											<img class="img-responsive" src="img/icono.png">
+										</div>
+										<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+										<h3 class="ff-amaranth"><a href="#">User 2</a></h3>
+											<p class="ff-poppins">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+										</div>
+										<br>
+										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+											<input type="checkbox" name="user1" value="User 1">
+										</div>
+									</div>
+								</div>
+							</div>
+							<hr>
+							<div class="comment-container">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<h2 class="ff-amaranth"><a href="#">Titulo 2</a></h2>
+									<h6 class="ff-poppins">Fecha de publicación: dd/mm/aaaa</h6>
+									<h3 class="ff-amaranth"><a href="#">Comentarios:</a></h3>
+									<div class="row single-comment">
+										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+											<img class="img-responsive" src="img/icono.png">
+										</div>
+										<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+										<h3 class="ff-amaranth"><a href="#">User 1</a></h3>
+											<p class="ff-poppins">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+										</div>
+										<br>
+										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+											<input type="checkbox" name="user1" value="User 1">
+										</div>
+									</div>
+								</div>
+							</div>
+							<hr>
+							<div class="comment-container">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<h2 class="ff-amaranth"><a href="#">Titulo 3</a></h2>
+									<h6 class="ff-poppins">Fecha de publicación: dd/mm/aaaa</h6>
+									<h3 class="ff-amaranth"><a href="#">Comentarios:</a></h3>
+									<div class="row single-comment">
+										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+											<img class="img-responsive" src="img/icono.png">
+										</div>
+										<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+										<h3 class="ff-amaranth"><a href="#">User 1</a></h3>
+											<p class="ff-poppins">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+										</div>
+										<br>
+										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+											<input type="checkbox" name="user1" value="User 1">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<hr>
 						<br>
 						<br>
-						<div id="summernote"></div>
-						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-							<h4 class="ff-amaranth">Imagen destacada de la publicación:</h4>
-							<button type="button" class="btn admin-btn ff-poppins center-block" style="width: 100%; margin-top: 20px;">Click aquí para subir la imagen</button>
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-							<h4 class="ff-amaranth">Etiquetas:</h4>
-							<input type="text" name="pub_title" id="pub_title" class="ff-poppins" placeholder="Etiquetas"/>
-							<h4 class="ff-amaranth">Categorías:</h4>
-							<input type="text" name="pub_title" id="pub_title" class="ff-poppins" placeholder="Categorías"/>
-						</div>
-					</div>
-					<br>
-					<br>
-					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 center-block">
-							<button onclick="location.href = 'admin_pub.html';" type="button" class="btn admin-btn ff-poppins center-block">Crear Publicación</button>
-					</div>						
+						<div class="row">
+							<div>
+								<div class="col-lg-6 col-md-4 col-sm-6 col-xs-6 ff-poppins center-block">
+									<button onclick="confirm_aprobar()" type="button" class="btn admin-btn ff-poppins center-block">Aprobar comentarios</button>	
+								</div>
+								<div class="col-lg-6 col-md-4 col-sm-6 col-xs-6 ff-poppins center-block">
+									<button onclick="confirm_rechazar()" type="button" class="btn admin-btn ff-poppins center-block">Rechazar comentarios</button>
+								</div>
+							</div>
+						</div>					
 					</div>
 				</div>					
 			</div>
@@ -248,6 +324,20 @@
 			</div>
 		</div>
 		<!-- Fin Footer -->
-		<script type="text/javascript" src="js/textfield_pub.js"></script>
+		<script type="text/javascript">
+			function confirm_aprobar() {
+    			var res= confirm("¿Desea Aprobar estos comentarios?");
+    			if (res){
+    				location.href = 'admin_comment.html';
+    			}
+    		}
+
+    		function confirm_rechazar() {
+    			var res= confirm("¿Desea Rechazar estos comentarios?");
+    			if (res){
+    				location.href = 'admin_comment.html';
+    			}
+    		}
+		</script>
 	</body>
 </html>
