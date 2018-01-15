@@ -46,7 +46,7 @@
 			<div class="row">
 				<center>
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-right: 0px; padding-left: 0px;">
-					<nav class="navbar navbar-inverse bar ff-poppins">
+					<nav class="navbar navbar-inverse bar ff-poppins" data-spy="affix" data-offset-top="197">
 					  <div class="container-fluid">
 					    <div class="navbar-header">
 					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -59,22 +59,22 @@
 					    </div>
 					    <div id="navbar" class="navbar-collapse collapse">
 						    <ul class="nav navbar-nav">
-						      <li class="active barBoton resaltar"><a href="#" id="inicio"></a></li>
-						      <li><a class="barBoton resaltar" href="analisis.html" id="analisis"></a></li>
-						      <li><a class="barBoton resaltar" href="populares.html" id="populares"></a></li>
+						      <li class="active barBoton resaltar"><a href="index.html" id="inicio">Inicio</a></li>
+						      <li><a class="barBoton resaltar" href="analisis.html" id="analisis">Análisis</a></li>
+						      <li><a class="barBoton resaltar" href="populares.html" id="populares">Populares</a></li>
 						      <li class="dropdown">
-						        <a class="dropdown-toggle  barBoton resaltar" data-toggle="dropdown" href="#" id="consolas"></a>
+						        <a class="dropdown-toggle  barBoton resaltar" data-toggle="dropdown" href="#" id="consolas">Consolas</a>
 						        <ul class="dropdown-menu bar">
 						          <li><a class="sobre" href="ps4.html">PS4</a></li>
 						          <li><a class="sobre" href="xbox.html">XBOX ONE</a></li>
 						          <li><a class="sobre" href="switch.html">NINTENDO SWITCH</a></li>
 						        </ul>
 						      </li>
-						      <li><a class="barBoton resaltar" href="contacto.html" id="contacto"></a></li>
+						      <li><a class="barBoton resaltar" href="contacto.html" id="contacto">Contacto</a></li>
 						    </ul>
 					        <ul class="nav navbar-nav navbar-right">
-					      	  <li><a class="barBoton right resaltar" href="#" data-toggle="modal" data-target="#myModal" id="registrar"></a></li>
-					      	  <li><a class="barBoton right resaltar" href="#" data-toggle="modal" data-target="#myModal2" id="inicioS"></a></li>
+					      	  <li><a class="barBoton right resaltar" href="#" data-toggle="modal" data-target="#myModal" id="registrar">Registrar</a></li>
+					      	  <li><a class="barBoton right resaltar" href="#" data-toggle="modal" data-target="#myModal2" id="inicioS">Iniciar Sesión</a></li>
 						    </ul>
 						</div>
 					  </div>
@@ -132,7 +132,7 @@
 		<div id="myModal2" class="modal fade ff-poppins" role="dialog">
 		  <div class="modal-dialog modal-sm">
 		    <!-- Modal content-->
-		    <div class="modal-content mod">
+		    <div id="inicio" class="modal-content mod">
 		      <div class="modal-header"  style="border: none; padding-top: 5%; padding-bottom: 1%;">
 		        <button type="button" class="close" data-dismiss="modal">&times;</button>
 		        <center><strong><h4 class="modal-title">Iniciar Sesión</h4></strong></center>
@@ -152,7 +152,42 @@
 		      <div class="modal-footer" style="border: none;">
 		      	<div class="row">
 		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-		        		<center><button type="button" class="btn modalBoton" data-dismiss="modal">Iniciar Sesión</button></center>
+		        		<center><button onclick="location.href = 'publicacion_auth.html';" type="button" class="btn modalBoton" data-dismiss="modal">Iniciar Sesión</button></center>
+		      		</div>
+		      	</div>
+		      	<div class="row">
+		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		      			<br>
+		        		<center><a data-toggle="modal" data-target="#myModal3" data-dismiss="modal">¿Olvido su Contraseña?</a></center>
+		      		</div>
+		      	</div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<div id="myModal3" class="modal fade ff-poppins" role="dialog">
+		  <div class="modal-dialog modal-sm">
+		    <!-- Modal content-->
+		    <div id="recuperar" class="modal-content mod">
+		      <div class="modal-header"  style="border: none; padding-top: 5%; padding-bottom: 1%;">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <center><strong><h4 class="modal-title">Enviar Contraseña</h4></strong></center>
+		      </div>
+		      <div class="modal-body">
+		      	<div class="row">
+		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		      			<input type="email" name="email" placeholder="Correo">
+		      		</div>
+		      	</div>
+		      </div>
+		      <div class="modal-footer" style="border: none;">
+		      	<div class="row">
+		      		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+		        		<center><button type="button"  data-toggle="modal" data-target="#myModal2" class="btn modalBoton" data-dismiss="modal">Volver</button></center>
+		      		</div>
+		      		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+		        		<center><button type="button" class="btn modalBoton" data-dismiss="modal">Enviar</button></center>
 		      		</div>
 		      	</div>
 		      </div>

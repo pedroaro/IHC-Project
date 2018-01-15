@@ -17,6 +17,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="./css/estilo.css" rel="stylesheet" type="text/css" media="screen" />
+	    <script type="text/javascript" src="./js/backend_auth.js"></script>
 	    <!--Función para rotar los carets en los dropdowns-->
 	    <script>
 		  $(function(){
@@ -26,7 +27,7 @@
 		  });
 		</script>
 	</head>
-	<body>
+	<body  onload="completar()">
 		<!-- Header -->
 		<div class="container">
 			<!-- Imagen -->
@@ -55,7 +56,7 @@
 					    </div>
 					    <div id="navbar" class="navbar-collapse collapse">
 						    <ul class="nav navbar-nav">
-						      <li><a class="barBoton resaltar" href="#" id="inicio">Inicio</a></li>
+						      <li><a class="barBoton resaltar" href="index_auth.html" id="inicio">inicio</a></li>
 						      <li><a class="barBoton resaltar" href="analisis_auth.html" id="analisis">Análisis</a></li>
 						      <li><a class="barBoton resaltar" href="populares_auth.html" id="populares">Populares</a></li>
 						      <li class="dropdown">
@@ -66,10 +67,10 @@
 						          <li><a class="sobre" href="switch_auth.html">NINTENDO SWITCH</a></li>
 						        </ul>
 						      </li>
-						      <li><a class="barBoton resaltar" href="contacto_auth.html" id="contacto">Contacto</a></li>
+						      <li class="active barBoton resaltar"><a href="#" id="contacto">Contacto</a></li>
 						    </ul>
 					        <ul class="nav navbar-nav navbar-right">
-					      	  <li class="dropdown inset active barBoton resaltar">
+					      	  <li class="dropdown inset">
 						        <a class="dropdown-toggle  barBoton resaltar" data-toggle="dropdown" href="#" id="NombreUsario"><img src="img/Profilepics/raineb.jpg" class="userImage" alt="Avatar"> &nbsp; RAINEB &nbsp; <span class="	glyphicon glyphicon-menu-down"></span></a>
 						        <ul class="dropdown-menu bar perfilMenu">
 						        	<li>
@@ -97,7 +98,7 @@
 			                                <div class="row">
 			                                    <div class="col-lg-12">
 			                                        <p>
-			                                            <a href="index.html" class="btn btn-danger btn-block">Cerrar Sesion</a>
+			                                            <a href="contacto.html" class="btn btn-danger btn-block">Cerrar Sesion</a>
 			                                        </p>
 			                                    </div>
 			                                </div>
@@ -116,44 +117,73 @@
 		</div>
 		<!-- Fin Header -->
 		<!-- Modal -->
-		<div id="myModal2" class="modal fade ff-poppins" role="dialog">
-		  <div class="modal-dialog modal-sm">
+		<div id="myModal" class="modal fade ff-poppins" role="dialog">
+		  <div class="modal-dialog">
 		    <!-- Modal content-->
 		    <div class="modal-content mod">
 		      <div class="modal-header"  style="border: none; padding-top: 5%; padding-bottom: 1%;">
 		        <button type="button" class="close" data-dismiss="modal">&times;</button>
-		        <center><strong><h4 class="modal-title">Cambiar contraseña</h4></strong></center>
+		        <center><strong><h4 class="modal-title">Registro</h4></strong></center>
 		      </div>
 		      <div class="modal-body">
 		      	<div class="row">
-		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-		      			<input type="password" name="Contrasena" placeholder="Contraseña Actual">
+		      		<div id="i1" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 izq">
+		      			<input type="text" name="nombre" placeholder="Nombre de Usuario">
 		      		</div>
-		      	</div>
-		      	<div class="row">
-		      		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-		      		</div>
-		      		<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10" style="border-bottom: solid 1px; margin-bottom: 9px; margin-left: -4px;">
-		      			<br>
-		      		</div>
-		      		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+		      		<div id="d1" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 der">
+		      			<input type="text" name="fecha" onfocus="(this.type='date')" placeholder="Fecha de Nacimiento">
 		      		</div>
 		      	</div>
 		      	<div class="row">
 		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-		      			<input type="password" name="Contrasena" placeholder="Nueva Contraseña">
+		      			<input type="email" name="email" placeholder="Correo">
 		      		</div>
 		      	</div>
 		      	<div class="row">
-		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-		      			<input type="password" name="Contrasena" placeholder="Repetir Contraseña">
+		      		<div  id="i2" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 izq">
+		      			<input type="password" name="Contrasena" placeholder="Contraseña">
+		      		</div>
+		      		<div  id="d2" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 der">
+		      			<input type="password" name="Contrasena2" placeholder="Confirmar Contraseña">
 		      		</div>
 		      	</div>
 		      </div>
 		      <div class="modal-footer" style="border: none;">
 		      	<div class="row">
 		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-		        		<center><button type="button" class="btn modalBoton" data-dismiss="modal">Cambiar</button></center>
+		        		<center><button type="button" class="btn modalBoton" data-dismiss="modal">Registrar</button></center>
+		      		</div>
+		      	</div>
+		      </div>
+		    </div>
+
+		  </div>
+		</div>
+
+		<div id="myModal2" class="modal fade ff-poppins" role="dialog">
+		  <div class="modal-dialog modal-sm">
+		    <!-- Modal content-->
+		    <div class="modal-content mod">
+		      <div class="modal-header"  style="border: none; padding-top: 5%; padding-bottom: 1%;">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <center><strong><h4 class="modal-title">Iniciar Sesión</h4></strong></center>
+		      </div>
+		      <div class="modal-body">
+		      	<div class="row">
+		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		      			<input type="email" name="email" placeholder="Correo">
+		      		</div>
+		      	</div>
+		      	<div class="row">
+		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		      			<input type="password" name="Contrasena" placeholder="Contraseña">
+		      		</div>
+		      	</div>
+		      </div>
+		      <div class="modal-footer" style="border: none;">
+		      	<div class="row">
+		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		        		<center><button type="button"  onclick="location.href = 'analisis_auth.html';" class="btn modalBoton" data-dismiss="modal">Iniciar Sesión</button></center>
 		      		</div>
 		      	</div>
 		      </div>
@@ -167,7 +197,7 @@
 			<div class="row">
 				<center>
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 tituloContacto ff-amaranth">
-					<h2>Editar Perfil</h2>
+					<h2>¿Quieres Comunicarte con Nosotros?</h2>
 				</div>
 				</center>
 			</div>
@@ -175,36 +205,21 @@
 				<div class="col-lg-3 col-md-3 col-sm-0 col-xs-0"></div>
 				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 					<div class="row">
-			      		<div id="i3" class="col-lg-3 col-md-3 col-sm-2 col-xs-12 izq">
-			      			<div class="row">
-			      				<div class="col-lg-0 col-md-0 col-sm-0 col-xs-4">
-			      				</div>
-			      				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-4">
-			      					<img src="img/Profilepics/raineb.jpg" class="userImage3" alt="Avatar">
-			      				</div>
-			      				<div class="col-lg-0 col-md-0 col-sm-0 col-xs-4">
-			      				</div>
-			      			</div>
+			      		<div id="i3" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 izq">
+			      			<input type="text" name="nombre" style="background-color: rgba(165,165,165,0.9) !important;" placeholder="Nombre Completo" value="Raquel Escalante" disabled>
 			      		</div>
-			      		<div  id="d3" class="col-lg-9 col-md-9 col-sm-10 col-xs-12 der">
-			      			<input type="text" name="nombre" placeholder="Nombre" value="Raquel">
-			      			<input type="text" name="apellido" placeholder="Apellido" value="Escalante">
+			      		<div  id="d3" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 der">
+			      			<input type="email" name="email" style="background-color: rgba(165,165,165,0.9) !important;" placeholder="Correo Electronico" value="raquel@gmail.com" disabled>
 			      		</div>
 			      	</div>
 			      	<div class="row">
-			      		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 izq">
-			      			<input type="text" name="usuario" placeholder="Usuario" value="Raineb">
-			      		</div>
-			      		<div  class="col-lg-6 col-md-6 col-sm-12 col-xs-12 der">
-			      			<input type="email" name="email" placeholder="Correo Electronico" value="Raquel@gmail.com">
+			      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			      			<textarea rows="6" style="margin-bottom: 0px;">Deje su Mensaje...</textarea><br><br>
 			      		</div>
 			      	</div>
 			      	<div class="row">
-			      		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 izq">
-			      			<button type="button" class="btn btn-primary contrasenaBoton ff-poppins center-block" data-toggle="modal" data-target="#myModal2">Cambiar Contraseña</button>
-			      		</div>
-			      		<div  class="col-lg-6 col-md-6 col-sm-12 col-xs-12 der">
-			      			<center><button type="button" class="btn  btn-success contrasenaBoton" data-dismiss="modal">Guardar</button></center>
+			      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			      			<center><button type="button" class="btn contactoBoton" data-dismiss="modal">Enviar</button></center>
 			      		</div>
 			      	</div>
 		      	</div>
