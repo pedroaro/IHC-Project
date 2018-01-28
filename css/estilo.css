@@ -316,6 +316,9 @@ hr{
 .sobre:hover{
 	color: #000!important;
 }
+.imag{
+	margin-top: 20px;
+}
 .noti{
 	border-top: solid 1px;
 	border-color: #630000;
